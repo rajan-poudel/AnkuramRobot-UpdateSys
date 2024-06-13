@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/iba_logo.png') }}">
+    <title>AnkuramRobot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/success.css') }}">
+    <style>
+      .container{
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+     <div id="success-container">
+      <div class="success-icon">
+        <img src="{{ url_for('static', filename='images/icon-success.svg') }}" alt="">
+      </div>
+      <div class="success-content">
+        <h1>Thanks You!</h1>
+        <p>Your details has been successfully submitted. <span>Thanks</span></p>
+      </div>
+      <a href="/">
+      <button>Ok</button>
+    </a>
+    </div>
+        
+  </div>
+</body>
+<script src="{{ url_for('static', filename='js/success.js') }}"></script>
+</html>

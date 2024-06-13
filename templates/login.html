@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d288b4e251.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/iba_logo.png') }}">
+    <title>AnkuramRobot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <!-- Sign In Form -->
+                <form class="sign-in-form" action="/" method="post">
+                    <h2 class="title">Admin Login</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" name="uname">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password">
+                    </div>
+                    <input type="submit" value="Login" class="btn solid">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+             <div class="panel left-panel">
+                 <div class="content">
+                     <p>Admin Login for Ankuram Robot</p>
+                     
+                 </div>
+
+                 <img src="{{ url_for('static', filename='images/log.svg') }}" class="image" alt="">
+             </div>
+
+             
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

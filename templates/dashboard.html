@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/iba_logo.png') }}">
+    <title>AnkuramRobot</title>
+    <style>
+        /* body{
+            overflow: hidden;
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <h2>Notice</h2>
+          <h3>Notice</h3>
+          <p>
+           Upload the photo of  notice to be displayed
+          </p>
+          <a href="/notice">Proceed</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>Slides</h2>
+          <h3>Slides</h3>
+          <p>
+            Upload the google slide about the important events to be displayed
+          </p>
+          <a href="/slide">Proceed</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>Food Menu</h2>
+          <h3>Food Menu</h3>
+          <p>
+            Upload the food menu for dynamic food menu displaying system
+          </p>
+          <a href="/foodmenu">Proceed</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 200,
+      glare: true,
+      "max-glare": 1,
+    });
+  </script>
+</html>

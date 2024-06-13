@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Tomato2:rgb(255, 18, 6);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--Charcoal-Grey);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#component-container {
+  width: 60%;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 2rem;
+  background-color: var(--White);
+  box-shadow: 5px 2px 20px 2px rgba(0,0,0,0.75);
+}
+
+#component-content > h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+#component-img {
+  width: 55%;
+}
+
+#component-img > img {
+  width: 100%;
+}
+
+.newsletter-points {
+  list-style-image: url('assets/images/icon-list.svg');
+}
+
+.newsletter-points li {
+  text-align: justify;
+  padding: 0 0.5rem;
+  margin: 1rem 0;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input > label {
+  font-size: small;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-input > input {
+  width: 85%;
+  padding: 1rem 1rem;
+  color: var(--Grey);
+  border: 1px solid var(--Grey);
+  border-radius: 0.5rem;
+}
+
+#success-container {
+  background-color: var(--White);
+  width: 25%;
+  padding: 5rem;
+  border-radius: 2rem;
+  box-shadow: 5px 2px 20px 2px rgba(0,0,0,0.75);
+}
+
+.success-content > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.success-content > p > span {
+  font-weight: bolder;
+}
+
+button {
+  width: 93.5%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background: linear-gradient(to right, var(--Tomato2), var(--Tomato));
+  box-shadow: 5px 2px 20px 3px rgba(255,98,87,0.75);
+}
+
+@media (max-width: 850px) {
+  #component-container {
+    width: 90%;
+  }
+
+  #success-container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 430px) {
+  main {
+    height: 105vh;
+  }
+
+  #component-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  #component-content {
+    padding: 0 1.5rem;
+  }
+
+  #component-img {
+    width: 100%;
+  }
+
+  #component-img > img {
+    width: 100%;
+  }
+
+  .form-input > input {
+    border: 1px solid var(--Grey);
+    width: 90%
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #success-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  main {
+    height: 120vh
+  }
+
+  #success-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    height: 147vh;
+  }
+
+  #component-content > h1 {
+    font-size: 2rem;
+  }
+
+  #success-container {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
