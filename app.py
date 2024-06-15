@@ -2,13 +2,13 @@ from flask import Flask, render_template, request ,session,redirect
 from pymongo import MongoClient
 from datetime import datetime
 
-usr_name = "root"
-usr_password = "AnkuramAcademy123"
+usr_name = ""
+usr_password = ""
 
-client = MongoClient('mongodb+srv://rajanpoudelnp:HJjU4sEeDNVzOpgL@rajancluster.rpt2ua9.mongodb.net/?retryWrites=true&w=majority&appName=RajanCluster')
+client = MongoClient('')
 
 app = Flask(__name__)
-app.secret_key='supersecretkey'
+app.secret_key=''
 
 @app.route("/",methods=['GET','POST'])
 def dashboard():
